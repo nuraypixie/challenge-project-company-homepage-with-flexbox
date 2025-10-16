@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Gochi+Hand&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+html, body {
+    background-color: pink;
+    color: #a8824;
+    font-size: 16px;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+main {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Baskervville SC', cursive;
+    font-size: 3.25rem;
+    margin-top: 3.75rem;
+
+}
+p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.75rem;
+    letter-spacing: 0.078125rem;
+
+}
+@media only screen and (max-width: 895px) {
+    main {
+      top: 2.5625rem;
+    }
+  }
+
+/* curve header */
+.custom-shape-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1; /* Ensure it's behind the content */
+}
+
+.custom-shape-divider svg {
+    position: relative;
+    display: block;
+    width: 100%; /* Ensure full container width */
+    height: 191px;
+    transform: rotateY(180deg);
+    overflow: visible; /* Ensure SVG renders completely */
+}
+
+.custom-shape-divider .shape-fill {
+    fill: pink;  /* Fill color of the curve */
+}
+
+/*header content*/
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;  
+}
+
+header .headercontent {
+    display: flex; 
+    align-items: center; 
+}
+
+header .logo {
+    flex: 1;
+}
+
+header .icon {
+    width: 7.5rem;
+    padding-left: 6.75rem;
+    padding-top: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-right: 6.75rem;
+    padding-bottom: 3.5rem;
+    font-family: 'Baskervville SC', cursive;
+    list-style: none;
+}
+
+nav a {
+    color: #e0a955;
+    text-decoration: none;
+    vertical-align: top;
+    font-size: 1.25rem;
+}
+
+nav a:hover {
+    color: #ffe5c2;
+}
+
+header .mobile {
+    display: none; 
+}
+
+@media only screen and (max-width: 895px) {
+    .custom-shape-divider {
+        display: none;
+    }
+
+    header {
+        background-color: pink;
+        border-bottom: 3px solid #e0a955;
+    }
+
+    header .icon {
+        flex-shrink: 2; 
+        max-width: 3rem;
+        padding: 0;
+        padding-left: 1rem;
+    }
+
+    nav li {
+        padding: 0;
+        padding-right: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header .icon {
+        padding-left: 0.5rem;
+        max-width: 2rem;
+    }
+}
+
+/* main content*/
+main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    align-content: center;
+    justify-content: space around;
+}
+
+
+/*banner content*/
+.banner {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-content: center;
+    align-items: center; 
+    border-bottom: 5px solid #e0a955;
+}
+
+.background-img-container {
+    background-image: url('resources/silk test.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 119rem;
+    height: 100%;
+}
+
+.banner .text-content {
+    padding:  10.625rem;
+    padding-bottom 0;
+}
+
+.banner h3 {
+    font-family: "Grey Qo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: seashell;
+    font-size: 4.5rem;
+}
+
+@media only screen and (max-width: 895px) {
+    
+}
+
+/*mission content*/
+.mission {
+    display: flex;
+    flex-direction: column;
+    color: #ffe5c2;
+    background-color: #ffb4a2;
+    border-bottom: 5px solid #e0a955;
+}
+
+.missioncontent {
+    display: inline-flex;
+    padding: 4.375rem;
+    padding-top: 0;
+}
+
+.missiontext {
+    width: 75%;
+    text-align: start;
+    line-height: 1.5;
+    padding: 2.5rem;
+}
+
+.missionimg {
+    border-radius: 3.125rem;
+    margin:  1.875rem;
+    overflow: hidden;
+}
+
+.missioncontent img {
+    width: 100%;
+    height: auto; 
+    display: block;
+}
+
+/*products content*/
+.products {
+    display: flex;
+    flex-direction: column;
+    background-color:  #f28a90;
+    color: #ffe5c2;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #e0a955;
+}
+
+.productlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4.375rem;
+}
+
+.item {
+    margin-bottom: 3.5rem;
+}
+
+.item img {
+    width: 31.25rem;
+    height: auto;
+    border-radius: 3.125rem;
+    border: 2.5px solid #e0a955;
+}
+
+h4 {
+    font-family: 'Baskervville SC', cursive;
+    font-size: 1.5rem;
+    margin-top: 0.75rem;
+}
+
+/*about content*/
+.about {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe5c2;
+    color: #e0a955;
+    border-bottom: 5px solid #e0a955;
+}
+
+.aboutcontent {
+    display: inline-flex;
+    padding: 4.375rem;
+    padding-top: 0;
+}
+
+.abouttext {
+    width: 75%;
+    text-align: start;
+    line-height: 1.5;
+    padding: 2.5rem;
+}
+
+.aboutimg {
+    border-radius: 3.125rem;
+    margin:  1.875rem;
+    overflow: hidden;
+}
+
+/*Footer*/
+footer {
+    padding: 1.5rem 2rem;
+}
+
+.footercontent {
+    color: #e0a955;
+    display: flex;
+    font-size: .75rem;
+}
+
+footer .copyright {
+    flex-grow: 1;
+    text-align: left;
+  }
